@@ -1,0 +1,327 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> ARCÁDIA ADESIVOS </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="T1.CSS" />
+    <script src="main"></script>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .layout {
+        overflow: hidden;
+        
+    }
+    .header-superior {
+        background-color:#3c3c3c;
+        width: 100%;
+        height: 55px;
+        padding: 0px;
+        text-align: left;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        
+    }
+   
+    .container{
+        background-color:white;
+        padding: 15px;
+        height: 100%;
+        margin-left: 240px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        display: block;
+        
+    }
+    
+    .header-superior ul{
+        list-style-type: none;
+
+    }
+
+    .header-superior ul li a{
+        font-size: 15px;
+        color:white;
+        text-decoration: none;
+        display: block;
+        float:left;
+        padding: 20px;
+        margin: 0px;
+    
+    
+    }
+
+
+    .header-superior ul li a:hover, .dropdown .dropdown-button:hover, .dropdown:hover .dropdown-button {
+        background-color: grey;
+        
+    }
+    .dropdown{
+        float:left;
+        
+    }
+
+    .dropdown .dropdown-button{
+        padding: 8px;
+        cursor: pointer;
+        
+    }
+    .dropdown .dropdown-content{
+        position: absolute;
+        background-color: #1f5872;
+       
+        display: none;
+    
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        
+      
+    }
+    a:link {
+        color:white;
+        text-decoration: none;
+    }
+    
+    a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu-lateral {
+        background-color: #1f5872;
+        position: fixed;
+        height: 40%;
+        left: 0;
+        width: 10%;
+    }
+    .menu-lateral2 {
+        background-color: #1f5872;
+        position: fixed;
+        float:right;
+        height: 48%;
+        right: 0;
+        width: 10%;
+    }
+    .menu-lateral ul li a{
+        text-decoration: none;
+        color: white;
+        float: left;
+        text-align:left;
+        padding: 10px; 
+        max-width: 100%; 
+    } 
+
+    .menu-lateral ul {
+            
+        list-style-type: none;
+     
+    }
+
+    .menu-lateral2 ul li a{
+        text-decoration: none;
+        color: white;
+        float: right;
+        text-align:center;
+        max-width: 100%;            
+    }
+    .menu-lateral ul li a:hover{
+        background-color: 3c3c3c;
+    
+    }
+
+    .bola{
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(black,#1f5872);
+        border-radius: 50%;
+        transform: translate(600px, 600px) rotate(360deg);
+        animation-name: rotacionar-transladar;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+       
+    @keyframes rotacionar-transladar{
+        0%{
+            transform: translate(500px, 0px) rotate(0deg);                
+        }
+        50%{
+            transform: translate(300px, 500px) rotate(0deg);
+        }
+        80%{
+            transform: translate(600px, 300px) rotate(360deg);
+        }
+        100%{
+            transform: translate(300px, 0px) rotate(0deg);                
+        }
+    }
+
+        .tamanho200{
+            height: 20px;
+            width: 20px;
+            padding: 20px;
+            background-color: green;
+        }
+        @media screen and (max-width:479px){
+            .cor{
+                background-color: blue;
+            }
+        }
+        @media screen and (min-width:780px){
+            .cor{
+                background-color: red;
+            }
+        
+        }
+    }
+    .galeria{
+        width: 70%;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+    .imagem-galeria{
+        display: inline-block;
+        margin: 20px;
+    }
+    .imagem-galeria img{
+        height: 100px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header class = "header-superior">
+        <h2 style="color: white;">
+            ARCÁDIA ADESIVOS
+        </h2>  
+        <div class="header-superior">
+            <h3>
+            <ul>
+                <div class = "dropdown">
+                    <div class = "dropdown-button">
+                        <a href=""> * Inicial * </a></li>
+                    </div>
+                                   
+                </div>
+            </ul>    
+            <ul>
+                <div class = "dropdown">
+                    <div class = "dropdown-button">
+                        <a href=""> Adesivos </a></li>
+                    </div>
+                        <div class = "dropdown-content">
+                            <li> <a href=""> Alternativos </a></li>
+                            <li> <a href=""> Tumblr </a></li>
+                            <li> <a href=""> Música </a></li>
+                            <li> <a href=""> Programação </a></li>
+                            
+                        </div>             
+                </div>
+            </ul>
+            <ul>
+                <div class = "dropdown">
+                    <div class = "dropdown-button">
+                        <a href=""> Encomendas </a></li>
+                    </div>
+                        <div class = "dropdown-content">
+                            <li> <a href=""> Quixadá </a></li>
+                            <li> <a href=""> Sertão Central </a></li>
+                            <li> <a href=""> Brasil </a></li>
+                        </div>             
+                </div>
+            </ul>
+            <ul>
+                    <div class = "dropdown">
+                        <div class = "dropdown-button">
+                            <a href="https://www.instagram.com/arcadiaadesivos/"> Instagram </a></li>
+                
+                </div>
+            </ul>
+            <ul>
+                    <div class = "dropdown">
+                        <div class = "dropdown-button">
+                            <a href=""> Missão </a></li>
+                        </div>
+                                       
+                    </div>
+                </ul>    
+            <ul>
+                    <div class = "dropdown">
+                        <div class = "dropdown-button">
+                            <a href=""> Contate-nos </a></li>
+                        </div>
+                        <div class = "dropdown-content">
+                            <li> <a href=""> Email </a></li>
+                            <li> <a href=""> Telefone </a></li>
+
+                                    
+                         </div>             
+                </div>
+                </ul>
+            </h3>
+        </div>
+
+        <div class="layout">
+            <h4>
+                <nav class="menu-lateral">
+                    <ul>
+                        <li><a href=""> Exposições</a></li>
+                        <li><a href=""> Parceiros</a></li>
+                        <li><a href=""> Fotografia</a></li>
+                        <li><a href=""> Autoria</a></li>
+                        <li><a href=""> Clientes</a></li>
+                        <li><a href=""> Pelo mundo</a></li>
+                    </ul>
+                </nav>
+            </h4>
+        </div>
+        <div class="layout">
+            <h4>
+                <nav class="menu-lateral2">
+                    <ul>
+                        <li><a href=""> Os <br> <br> melhores<br> <br> adesivos do <br> <br> Brasil <br> <br>você <br> <br>encontra <br> <br>aqui!</a></li>
+                        
+                    </ul>
+                </nav>
+            </h4>
+        </div>
+
+        <div class="container">
+            VIEMOS PARA REVOLUCIONAR O MERCADO DE ADESIVOS! 
+            <br>
+            <br>
+            <h6>
+            <p>  Contamos com as melhores impressões de toda a América Latina, confira! </p>
+            </h6>
+        </div> 
+        <br>
+        <br>
+        <div class="galeria">
+            
+            <div class="imagem-galeria"><img src="st,small,215x235-pad,210x230,f8f8f8.lite-1.jpg" alt="rick" style=" float:left;"></div>       
+            <div class="imagem-galeria"><img src="images (1).jpeg" alt="rick" style=" float:left;"></div>
+            <div class="imagem-galeria"><img src="36bd52b24a7d36891fe6fdccf3497602.jpg" alt="rick" style=" float:left;"></div>
+            <div class="imagem-galeria"><img src="91daeb812263fa712e9c9f520c7e2e9d.jpg" alt="rick" style=" float:left;"></div>
+            <div class="imagem-galeria"><img src="42c1b834d7041042b27d131935dd460f.jpg" alt="rick" style=" float:left;"></div>
+            <div class="imagem-galeria"><img src="a5f87135544c6f5b1aa852606e397b66.jpg" alt="rick" style=" float:left;"></div>
+            <div class="imagem-galeria"><img src="562bd607e102d54e61814dee52e09a96.jpg" alt="rick" style=" float:left;"></div>
+            <div class="imagem-galeria"><img src="0fddbbb6b7a78f21effa5831f7f3a5f5.jpg" alt="rick" style=" float:right;"></div>
+            <div class="imagem-galeria"><img src="st,small,215x235-pad,210x230,f8f8f8.lite-1.jpg" alt="rick" style=" float:left;"></div>       
+        </div>
+        <div class="bola"></div> 
+        <div class="tamanho200 cor"></div>
+
+
+</body>
+</html>
